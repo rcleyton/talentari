@@ -74,6 +74,7 @@ GEM
       uri (>= 0.13.1)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
+    ansi (1.5.0)
     ast (2.4.2)
     base64 (0.2.0)
     bcrypt_pbkdf (1.1.1)
@@ -180,6 +181,13 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.5)
     minitest (5.25.1)
+    minitest-focus (1.4.0)
+      minitest (>= 4, < 6)
+    minitest-reporters (1.7.1)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
     msgpack (1.7.5)
     nenv (0.3.0)
     net-imap (0.5.1)
@@ -254,6 +262,10 @@ GEM
       activesupport (= 8.0.0)
       bundler (>= 1.15.0)
       railties (= 8.0.0)
+    rails-controller-testing (1.0.5)
+      actionpack (>= 5.0.1.rc1)
+      actionview (>= 5.0.1.rc1)
+      activesupport (>= 5.0.1.rc1)
     rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
@@ -404,10 +416,13 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
+  minitest-focus
+  minitest-reporters
   pg (~> 1.1)
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.0)
+  rails-controller-testing
   rubocop-rails-omakase
   selenium-webdriver
   simplecov

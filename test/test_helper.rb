@@ -10,6 +10,12 @@ end
 
 require_relative "../config/environment"
 require "rails/test_help"
+require "minitest/reporters"
+require "minitest/spec"
+require "capybara/rails"
+require "capybara/minitest"
+
+Minitest::Reporters.use! Minitest::Reporters::ProgressReporter.new
 
 module ActiveSupport
   class TestCase
@@ -19,6 +25,19 @@ module ActiveSupport
     # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
     fixtures :all
 
-    # Add more helper methods to be used by all tests here...
+    # Make the Capybara DSL available in all integration tests
+    include Capybara::DSL
+    # Make `assert_*` methods behave like Minitest assertions
+    include Capybara::Minitest::Assertions
+
+    # Reset sessions and driver between tests
+    teardown do
+      Capybara.reset_sessions!
+      Capybara.use_default_driver
+    end
+
+    Capybara.configure do |config|
+      config.save_path = Rails.root.join("tmp", "capybara")
+    end
   end
 end

@@ -28,8 +28,11 @@ end
 
 group :test do
   gem "capybara"
-  gem "guard-minitest"
   gem "guard"
+  gem "guard-minitest"
+  gem "minitest-focus"
+  gem "minitest-reporters"
+  gem "rails-controller-testing"
   gem "selenium-webdriver"
   gem "simplecov", require: false
 end
