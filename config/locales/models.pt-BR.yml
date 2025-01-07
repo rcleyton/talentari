@@ -1,0 +1,19 @@
+---
+pt-BR:
+  activerecord:
+    models:
+      user: Usuário
+    attributes:
+      user:
+        email: E-mail
+        password: Senha
+        password_confirmation: Confirmar senha
+    errors:
+      messages:
+        password_not_complex: deve conter letras, números e caracteres especiais
+        password_contains_whitespace: não pode conter espaços
+  placeholders:
+    email: Digite seu email aqui
+    password: Digite sua senha aqui
+    repeat_password: Repita a sua senha
+    minimum_characters: Alfanumérica e mínimo de 8 caracteres

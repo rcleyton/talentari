@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: 'company1@talentari.com.br'
+  password_digest: 'Company_1'
+  role: 1
+
+two:
+  email: 'company2@talentari.com.br'
+  password_digest: 'Company_2'
+  role: 1
