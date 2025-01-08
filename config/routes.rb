@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   root        to: "site/welcome#index"
   get "home", to: "site/welcome#index"
+
+  get "companies/signup", to: "companies/signup#new"
 end

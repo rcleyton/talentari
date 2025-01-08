@@ -3,6 +3,9 @@
     "coverage": {
       "/home/cleyton-silva/Workspace/talentari/app/models/user.rb": {
         "lines": [
+          null,
+          null,
+          null,
           1,
           1,
           null,
@@ -116,6 +119,26 @@
           null
         ]
       },
+      "/home/cleyton-silva/Workspace/talentari/app/controllers/companies/signup_controller.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/cleyton-silva/Workspace/talentari/app/controllers/companies_controller.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
       "/home/cleyton-silva/Workspace/talentari/app/jobs/application_job.rb": {
         "lines": [
           0,
@@ -138,7 +161,7 @@
         "branches": {}
       }
     },
-    "timestamp": 1736253298
+    "timestamp": 1736342868
   },
   "Unit Tests": {
     "coverage": {
