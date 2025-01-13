@@ -40,4 +40,4 @@ group :test do
   gem "simplecov", require: false
 end
 
-gem "tailwindcss-rails", "~> 3.0"
+gem "tailwindcss-rails", "~> 3.2"
