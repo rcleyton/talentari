@@ -21,7 +21,6 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 group :development, :test do
   gem "brakeman", require: false
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
-  gem "dotenv-rails"
   gem "rubocop-rails-omakase", require: false
 end
 
@@ -38,6 +37,10 @@ group :test do
   gem "rails-controller-testing"
   gem "selenium-webdriver"
   gem "simplecov", require: false
+end
+
+group :development, :test, :production do
+  gem "dotenv-rails"
 end
 
 gem "tailwindcss-rails", "~> 3.0"
