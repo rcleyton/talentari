@@ -9,21 +9,21 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "email cannot be blank" do
-    @company.email = ""
+    @company.email_address = ""
     assert_not @company.valid?
-    assert_includes @company.errors[:email], "não pode ficar em branco"
+    assert_includes @company.errors[:email_address], "não pode ficar em branco"
   end
 
   test "email must be valid" do
-    @company.email = "foo@bar"
+    @company.email_address = "foo@bar"
     assert_not @company.valid?
-    assert_includes @company.errors[:email], "deve ter um formato válido"
+    assert_includes @company.errors[:email_address], "deve ter um formato válido"
   end
 
   test "email must be unique" do
-    new_user = User.create(email: "company1@talentari.com.br", password: "Password@1", password_confirmation: "Password@1", role: 1)
+    new_user = User.create(email_address: "company1@talentari.com.br", password: "Password@1", password_confirmation: "Password@1", role: 1)
     assert_not new_user.valid?
-    assert_includes new_user.errors[:email], "já está em uso"
+    assert_includes new_user.errors[:email_address], "já está em uso"
   end
 
   test "password must contain letters, numbers, and special characters" do

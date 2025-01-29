@@ -1,11 +1,11 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+<% password_digest = BCrypt::Password.create("password") %>
 
 one:
-  email: 'company1@talentari.com.br'
-  password_digest: 'Company_1'
+  email_address: company1@talentari.com.br
+  password_digest: <%= password_digest %>
   role: 1
 
 two:
-  email: 'company2@talentari.com.br'
-  password_digest: 'Company_2'
+  email_address: company2@talentari.com.br
+  password_digest: <%= password_digest %>
   role: 1

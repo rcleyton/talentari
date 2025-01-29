@@ -2,6 +2,8 @@
 # frozen_string_literal: true
 
 class Companies::SignupController < CompaniesController
+  allow_unauthenticated_access only: [ :new, :create ]
+
   include UserRegistrable
 
   def new

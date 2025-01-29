@@ -5,7 +5,7 @@ pt-BR:
       user: Usuário
     attributes:
       user:
-        email: E-mail
+        email_address: E-mail
         password: Senha
         password_confirmation: Confirmar senha
     errors:

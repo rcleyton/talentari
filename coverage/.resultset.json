@@ -21,6 +21,8 @@
           1,
           null,
           1,
+          null,
+          1,
           13,
           null,
           null
@@ -44,13 +46,13 @@
           1,
           13,
           null,
-          7,
+          1,
           null,
           null,
           1,
           null,
           1,
-          7,
+          1,
           null,
           null,
           null
@@ -102,11 +104,14 @@
           null,
           1,
           1,
+          null,
+          1,
           null
         ]
       },
       "/home/cleyton-silva/Workspace/talentari/app/controllers/application_controller.rb": {
         "lines": [
+          1,
           1,
           null,
           1,
@@ -119,12 +124,73 @@
           null
         ]
       },
+      "/home/cleyton-silva/Workspace/talentari/app/controllers/concerns/authentication.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
       "/home/cleyton-silva/Workspace/talentari/app/controllers/companies/signup_controller.rb": {
         "lines": [
           null,
           null,
           null,
           1,
+          1,
+          null,
           1,
           null,
           1,
@@ -176,6 +242,91 @@
           null
         ]
       },
+      "/home/cleyton-silva/Workspace/talentari/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/home/cleyton-silva/Workspace/talentari/app/controllers/passwords_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/home/cleyton-silva/Workspace/talentari/app/controllers/sessions_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
       "/home/cleyton-silva/Workspace/talentari/app/jobs/application_job.rb": {
         "lines": [
           0,
@@ -196,9 +347,37 @@
           0
         ],
         "branches": {}
+      },
+      "/home/cleyton-silva/Workspace/talentari/app/mailers/passwords_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/home/cleyton-silva/Workspace/talentari/app/models/current.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/home/cleyton-silva/Workspace/talentari/app/models/session.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {}
       }
     },
-    "timestamp": 1737482481
+    "timestamp": 1738175240
   },
   "Unit Tests": {
     "coverage": {

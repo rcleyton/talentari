@@ -4,10 +4,12 @@
 class User < ApplicationRecord
   has_secure_password
 
-  validates :email,    presence: true, uniqueness: true, email: { message: "deve ter um formato válido" }
-  validates :password, presence: true, length: { minimum: 8 }, password: true
+  validates :email_address,         presence: true, uniqueness: true, email: { message: "deve ter um formato válido" }
+  validates :password,              presence: true, length: { minimum: 8 }, password: true
   validates :password_confirmation, presence: true
-  validates :role, presence: true, inclusion: { in: -> { User.roles.keys } }
+  validates :role,                  presence: true, inclusion: { in: -> { User.roles.keys } }
+
+  has_many :sessions, dependent: :destroy
 
   enum :role, { admin: 0, company: 1, applicant: 2 }
 

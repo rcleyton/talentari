@@ -9,7 +9,7 @@ class Companies::SignupControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
 
     assert_select "form[action=?]", companies_signup_path do
-      assert_select "input[type=email][name=?]", "user[email]"
+      assert_select "input[type=email][name=?]", "user[email_address]"
       assert_select "input[type=password][name=?]", "user[password]"
       assert_select "input[type=password][name=?]", "user[password_confirmation]"
       assert_select "input[type=submit]"
@@ -19,7 +19,7 @@ class Companies::SignupControllerTest < ActionDispatch::IntegrationTest
   test "successful signup" do
     visit companies_signup_url
 
-    fill_in "user[email]", with: "teste@teste.com"
+    fill_in "user[email_address]", with: "teste@teste.com"
     fill_in "user[password]",	with: "A12345678@"
     fill_in "user[password_confirmation]",	with: "A12345678@"
 
@@ -32,7 +32,7 @@ class Companies::SignupControllerTest < ActionDispatch::IntegrationTest
   test "email cannot be blank" do
     visit companies_signup_url
 
-    fill_in "user[email]", with: ""
+    fill_in "user[email_address]", with: ""
     fill_in "user[password]",	with: "A12345678@"
     fill_in "user[password_confirmation]",	with: "A12345678@"
 
@@ -45,7 +45,7 @@ class Companies::SignupControllerTest < ActionDispatch::IntegrationTest
   test "password cannot be blank" do
     visit companies_signup_url
 
-    fill_in "user[email]", with: "teste@teste.com"
+    fill_in "user[email_address]", with: "teste@teste.com"
     fill_in "user[password]",	with: ""
     fill_in "user[password_confirmation]",	with: ""
 
@@ -59,7 +59,7 @@ class Companies::SignupControllerTest < ActionDispatch::IntegrationTest
   test "password confirmation and password must be equal" do
     visit companies_signup_url
 
-    fill_in "user[email]", with: "teste@teste.com"
+    fill_in "user[email_address]", with: "teste@teste.com"
     fill_in "user[password]",	with: "A12345678@"
     fill_in "user[password_confirmation]",	with: ""
 
@@ -72,7 +72,7 @@ class Companies::SignupControllerTest < ActionDispatch::IntegrationTest
   test "password must be alphanumeric" do
     visit companies_signup_url
 
-    fill_in "user[email]", with: "teste@teste.com"
+    fill_in "user[email_address]", with: "teste@teste.com"
     fill_in "user[password]",	with: "12345678"
     fill_in "user[password_confirmation]",	with: "12345678"
 
