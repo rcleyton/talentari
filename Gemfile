@@ -43,4 +43,6 @@ group :development, :test, :production do
   gem "dotenv-rails"
 end
 
-gem "tailwindcss-rails", "~> 3.0"
+gem "tailwindcss-ruby", "~> 3.4"
+
+gem "tailwindcss-rails", "~> 3.3"
