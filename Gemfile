@@ -8,7 +8,7 @@ gem "kamal", require: false
 gem "pg", "~> 1.1"
 gem "propshaft"
 gem "puma", ">= 5.0"
-gem "rails", "~> 8.0.0"
+gem "rails", "~> 8.0.1"
 gem "simple_form"
 gem "solid_cable"
 gem "solid_cache"
@@ -43,6 +43,6 @@ group :development, :test, :production do
   gem "dotenv-rails"
 end
 
-gem "tailwindcss-ruby", "~> 3.4"
+gem "tailwindcss-ruby", "~> 4.0"
 
-gem "tailwindcss-rails", "~> 3.3"
+gem "tailwindcss-rails", "~> 4.1"
